@@ -1,0 +1,41 @@
+/*スマホサイトの指定*/
+#container{
+    width: 100%;
+    margin: 50px auto;
+    background-color: #EEEEEE;
+    display: block;
+    justify-content: flex-start;
+}
+
+#left{
+    width: 100%;
+    background-color: #aaeeff;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#right{
+    width: 100%;
+    background-color: #ffeecc;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+@media(min-width: 768px){
+    /* PCサイトの指定 */
+    #container{
+        width:950;
+        background-color: #FF0000;
+        display: flex;
+        justify-content: space-between;
+    }
+    #left{
+        width: 300px;
+        padding: 50px 0 200px;
+    }
+    #right{
+        width: 500px;
+        padding: 50px 0 200px;
+    }
+}
