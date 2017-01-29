@@ -9,7 +9,9 @@
 <body>
     <canvas id="canvasEl" width="1024" height="768"></canvas>
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="js/vageSpriteSheet"></script>
     <script>
+
 
       // windowを読み込んだら
       window.addEventListener('load',init);
@@ -34,7 +36,7 @@
               console.log('読み込み完了');
 
               //スプライトシートの呼び出し
-              var viSprite = new createjs.SpritSheet(vitaminCSprite);
+              var viSprite = new createjs.SpriteSheet(vitaminCSprite);
               var vitaminC = new createjs.Sprite(viSprite,'stand');
               stage.addChild(vitaminC);
           }
