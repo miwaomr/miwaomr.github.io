@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>shape createjs</title>
+</head>
+<body>
+    <canvas id="canvasEl" width="1024" height="768"></canvas>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+
+      // windowを読み込んだら
+      window.addEventListener('load',init);
+
+      function init(){
+          // ステージを作成
+          var stage = new createjs.Stage('canvasEl');
+
+          // 円の設定
+          var circle = new createjs.Shape();
+          circle.graphics.beginFill('#0000FF').drawCircle(200,200,50);
+          circle.x = 50;
+          circle.y = 50;
+          circle.scaleX = 2;
+          circle.scaleY = 2;
+          // circle.alpha = 0
+          // ステージに配置
+          // stage.addChild(circle);
+          // 描画の更新
+          stage.update();
+
+          // 長方形
+          var rect = new createjs.Shape();
+          rect.graphics.beginFill('#FF0000').drawRect(400,200,100,100);
+          // 回転
+          // rect.rotation = 10;
+          // 透過
+          // rect.alpha = 0.5;
+          stage.addChild(rect);
+          stage.update();
+
+          var rect_2 = new createjs.Shape();
+          rect_2.graphics.beginFill('#00FF00').drawRect(500,200,100,100);
+          stage.addChild(rect_2);
+          stage.update();
+
+          // rectをクリックしたら
+          rect.addEventListener('click',function(){
+              console.log('押されたよ');
+              // circle.alpha = 1;
+              stage.addChild(circle);
+              stage.update();
+          });
+
+          rect_2.addEventListener('click',function(){
+              stage.removeChild(circle);
+              stage.update();
+          })
+
+
+      }
+
+    </script>
+</body>
+</html>

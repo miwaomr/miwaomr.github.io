@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bitmap createjs</title>
+</head>
+<body>
+    <canvas id="canvasEl" width="1024" height="768"></canvas>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+
+      // windowを読み込んだら
+      window.addEventListener('load',init);
+
+      function init(){
+          // ステージを作成
+          var stage = new createjs.Stage('canvasEl');
+
+
+
+          // 深く考えずにとりあえず入れておくやつ↓
+          // requestAnimationFrameを使う
+          createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
+          createjs.Ticker.setFPS(30);
+          // 描画し続ける draw
+          createjs.Ticker.addEventListener('tick', function(){
+              // 描画の更新
+              stage.update();
+          });
+
+
+
+
+
+      }
+
+    </script>
+</body>
+</html>

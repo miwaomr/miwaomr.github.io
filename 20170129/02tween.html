@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>shape createjs</title>
+</head>
+<body>
+    <canvas id="canvasEl" width="1024" height="768"></canvas>
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script>
+
+      // windowを読み込んだら
+      window.addEventListener('load',init);
+
+      function init(){
+          // ステージを作成
+          var stage = new createjs.Stage('canvasEl');
+
+          // 円の設定
+          var circle = new createjs.Shape();
+          circle.graphics.beginFill('#0000FF').drawCircle(200,200,50);
+          // ステージに配置
+          stage.addChild(circle);
+
+          circle.addEventListener('click', function(){
+              // トゥイーン
+              createjs.Tween.get(rect).to({x:500,y:300},1000,createjs.Ease.bouceOut).wait(1000).call(rect2Anime);
+
+        });
+
+          // 四角形
+          var rect = new createjs.Shape();
+          rect.graphics.beginFill('#FF0000').drawRect(400,200,100,100);
+          stage.addChild(rect);
+
+          // 四角形2
+          var rect2 = new createjs.Shape();
+          rect2.graphics.beginFill('#00FF00').drawRect(500,200,100,100);
+          stage.addChild(rect2);
+
+          function rect2Anime(){
+              createjs.Tween.get(rect2).to({x:500,y:300,alpha:0.2},1000,createjs.Ease.bouceOut);
+          }
+
+          // 深く考えずにとりあえず入れておくやつ↓
+          // requestAnimationFrameを使う
+          createjs.Ticker.timingMode = createjs.Ticker.RAF_SYNCHED;
+          createjs.Ticker.setFPS(30);
+          // 描画し続ける draw
+          createjs.Ticker.addEventListener('tick', function(){
+              // 描画の更新
+              stage.update();
+          });
+
+
+
+
+
+      }
+
+    </script>
+</body>
+</html>
