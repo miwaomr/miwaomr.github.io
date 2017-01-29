@@ -41,7 +41,8 @@
               stage.addChild(vitaminC);
 
               // トゥイーン
-              createjs.Tween.get(vitaminC).wait(1000).call(viWalk).to({x:500},2000).call(viStop).get(iron).wait(1000).call(irWalk).to({x:500},2000).call(irStop)
+              createjs.Tween.get(vitaminC).wait(1000).call(viWalk).to({x:500},2000).call(viStop)
+              createjs.Tween.get(iron).wait(1000).call(irWalk).to({x:500},2000).call(irStop)
 
               function viWalk(){
                   vitaminC.gotoAndPlay('walk');
