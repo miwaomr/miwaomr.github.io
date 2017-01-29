@@ -18,7 +18,10 @@
           // ステージを作成
           var stage = new createjs.Stage('canvasEl');
 
-
+          var tomato = new createjs.Bitmap('img/tomato.png');
+          stage.addChild(tomato);
+          tomato.x = 200;
+          tomato.y = 200;
 
           // 深く考えずにとりあえず入れておくやつ↓
           // requestAnimationFrameを使う
