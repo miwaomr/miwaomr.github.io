@@ -46,7 +46,7 @@ $(function(){
         var reH = resizeImg(w,h);
         console.log(reH);
 
-        drawCanvas(imgEl,imgWidth,Math.ceil(reH));
+        drawCanvas(imgEl,w,h);
     }
 
     // 画像をリサイズする関数
