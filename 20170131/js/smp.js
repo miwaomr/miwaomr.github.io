@@ -6,7 +6,7 @@ $(function(){
     var canvasEl = $('#canvasEl')[0];
 
     // 画像の幅を500にする
-    var imgWidth = 500;
+    var imgWidth = 1000;
 
     // 色の受取用の配列
     var colorPallete = [];
@@ -46,7 +46,7 @@ $(function(){
         var reH = resizeImg(w,h);
         console.log(reH);
 
-        drawCanvas(imgEl,w,h);
+        drawCanvas(imgEl,imgWidth,Math.ceil(reH));
     }
 
     // 画像をリサイズする関数
