@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta charset="utf-8">
+<title>JavaScript Load Image</title>
+<!-- <link rel="stylesheet" href="../css/vendor/jquery.Jcrop.css"> -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+<h2>Select an image file</h2>
+<p><input type="file" id="file-input"></p>
+
+
+<!-- <p id="actions" style="display:none;">
+	<button type="button" id="edit">Edit</button>
+	<button type="button" id="crop">Crop</button>
+</p> -->
+<div id="result" class="result">
+    <p>This demo works only in browsers with support for the <a href="https://developer.mozilla.org/en/DOM/window.URL">URL</a> or <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API.</p>
+</div>
+<div id="colorPallete">
+    <ul></ul>
+</div>
+<!-- <div id="exif" class="exif" style="display:none;">
+    <h2>Exif meta data</h2>
+    <p id="thumbnail" class="thumbnail" style="display:none;"></p>
+    <table></table>
+</div> -->
+<script src="../js/lib/load-image.js"></script>
+<script src="../js/lib/load-image-meta.js"></script>
+<script src="../js/lib/load-image-exif.js"></script>
+<script src="../js/lib/load-image-exif-map.js"></script>
+<script src="../js/lib/load-image-orientation.js"></script>
+<!-- jQuery and Jcrop are not required by JavaScript Load Image, but included for the demo -->
+<script src="../js/lib/jquery.js"></script>
+<script src="../js/lib/jquery.Jcrop.js"></script>
+<script src="../js/lib/Vibrant.min.js"></script>
+<script src="../js/sp.js"></script>
+</body>
+</html>
