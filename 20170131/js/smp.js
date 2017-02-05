@@ -6,7 +6,7 @@ $(function(){
     var canvasEl = $('#canvasEl')[0];
 
     // 画像の幅を500にする
-    var imgWidth = 1000;
+    var imgWidth = 500;
 
     // 色の受取用の配列
     var colorPallete = [];
