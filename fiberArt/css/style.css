@@ -169,11 +169,11 @@ td {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 #colorPallete li{
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    text-align: center;
-    margin: 5%;
 }
