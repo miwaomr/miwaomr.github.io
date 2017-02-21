@@ -14,13 +14,14 @@ body {
   margin: 0 auto;
   padding: 1em;
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 1.4em;
   background: #fff;
   color: #000;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
+
 a {
   color: orange;
   text-decoration: none;
@@ -28,15 +29,12 @@ a {
 
 /* 写真選択画面 */
 
-#before figure {
-  width: 575px;
-  margin: 0 auto;
+#before {
+  text-align: center;
 }
 
 img {
-  border: 0;
-  vertical-align: middle;
-  margin-top: 20px;
+  width: 100%;
 }
 
 h1 {
@@ -44,32 +42,41 @@ h1 {
 }
 
 h2 {
-  margin-top: 220px;
-  text-align: center;
-  font-size: 40px;
+  margin-top: 30%;
+  font-size: 20px;
 }
 
 p {
+  margin: 0;
+}
+
+.file_button {
+  display: inline-block;
+  position: relative;
+  padding: 0.3em 3em;
+  font-size: 18px;
   text-align: center;
-  font-size: 36px;
   color: #fff;
-  line-height: 2.2;
-}
-
-.file {
-  overflow: hidden;
-  width: 400px;
-  height: 90px;
-  margin: 160px auto;
-  background-color: #5a5a5a;
   border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
+  background-color: #535353;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
 }
 
-.file input[type="file"] {
+.file_button:hover {
+  background-color: #a5a5a5;
+}
+
+.file_input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
-  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   cursor: pointer;
 }
 
