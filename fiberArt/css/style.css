@@ -35,7 +35,6 @@ a {
 
 img {
   width: 100%;
-  margin: 5% 0 5%;
 }
 
 h1 {
@@ -118,7 +117,7 @@ td {
   }
 
   p {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .file_button {
