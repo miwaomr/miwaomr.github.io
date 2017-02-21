@@ -100,6 +100,7 @@ tr:nth-child(odd) {
 td {
   padding: 10px;
 }
+
 .result,
 .thumbnail {
   padding: 20px;
@@ -149,7 +150,6 @@ td {
     opacity: 0;
     cursor: pointer;
   }
-
 
   .navigation {
     list-style: none;
