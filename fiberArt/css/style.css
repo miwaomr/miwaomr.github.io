@@ -174,5 +174,6 @@ td {
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    float: left;
+    text-align: center;
+    margin: 5%;
 }
