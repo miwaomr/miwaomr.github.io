@@ -115,10 +115,14 @@ td {
     font-size: 40px;
   }
 
+  p {
+    margin-top: 10%;
+  }
+
   .file_button {
     display: inline-block;
     position: relative;
-    padding: 0.3em 3em;
+    padding: 1em 3em;
     font-size: 36px;
     text-align: center;
     color: #fff;
