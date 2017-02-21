@@ -17,7 +17,7 @@ body {
   font-size: 1em;
   line-height: 1.4em;
   background: #fff;
-  color: #999;
+  color: #000;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -25,23 +25,66 @@ a {
   color: orange;
   text-decoration: none;
 }
+
+/* 写真選択画面 */
+
+#before figure {
+  width: 575px;
+  margin: 0 auto;
+}
+
 img {
   border: 0;
   vertical-align: middle;
+  margin-top: 20px;
 }
+
 h1 {
   line-height: 1em;
 }
+
+h2 {
+  margin-top: 220px;
+  text-align: center;
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  line-height: 2.2;
+}
+
+.file {
+  overflow: hidden;
+  width: 400px;
+  height: 90px;
+  margin: 160px auto;
+  background-color: #5a5a5a;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+}
+
+.file input[type="file"] {
+  opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  cursor: pointer;
+}
+
 table {
   width: 100%;
   word-wrap: break-word;
   table-layout: fixed;
   border-collapse: collapse;
 }
+
 tr {
   background: #fff;
   color: #222;
 }
+
 tr:nth-child(odd) {
   background: #eee;
   color: #222;
