@@ -56,6 +56,7 @@ p {
   padding: 0.3em 3em;
   font-size: 18px;
   text-align: center;
+  font-weight: bold;
   color: #fff;
   border-radius: 40px;
   background-color: #535353;
@@ -120,7 +121,6 @@ td {
   }
 
   .file_button {
-    font-weight: bold;
     display: inline-block;
     position: relative;
     padding: 0.8em 5em;
