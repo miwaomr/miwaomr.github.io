@@ -9,10 +9,23 @@ $(function () {
   var coordinates
 
 
-// 写真を選んだら#beforeを隠す
-$(function)(){
-  
-}
+// #playStart押したら遷移する(#beforeを表示#topを非表示)
+//   $('#playStart').click(function() {
+//       $('#top').fadeOut('2500');
+//       $('#before').fadeIn('3000', 'easeOutQuad');
+// });
+
+$("#playStart").click(function(){
+     $("#top").animate(
+       {opacity: "toggle"},
+       { duration: 1000, easing: 'swing', }
+     );
+     $("#before").animate(
+       { opacity: 'show',},
+       { duration: 2500, easing: 'swing', }
+     );
+   });
+
 
 // 次へを押したら画像を隠す
 
