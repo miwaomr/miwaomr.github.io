@@ -9,6 +9,16 @@ $(function () {
   var coordinates
 
 
+// 写真を選んだら#beforeを隠す
+$(function)(){
+  
+}
+
+// 次へを押したら画像を隠す
+
+// 画像が隠れたら作品が現れる
+
+
   // 色の受取用の配列
   var colorPallete = [];
 
