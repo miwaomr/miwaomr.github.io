@@ -34,7 +34,7 @@ $("#playStart").click(function(){
     if (thumbnail) {
       thumbNode.empty()
       loadImage(thumbnail, function (img) {
-        thumbNode.append(img).show().hide('#before')
+        thumbNode.append(img).show()
       }, {orientation: exif.get('Orientation')})
     }
     for (prop in tags) {
@@ -129,7 +129,7 @@ $("#playStart").click(function(){
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: result.width(),
+      maxWidth: result.width(600).height(600),
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,
@@ -140,6 +140,7 @@ $("#playStart").click(function(){
     }
     exifNode.hide()
     thumbNode.hide()
+    $('#before').hide();
     displayImage(file, options)
   }
 
