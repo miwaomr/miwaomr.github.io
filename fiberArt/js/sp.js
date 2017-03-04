@@ -7,6 +7,7 @@ $(function () {
   var actionsNode = $('#actions')
   var currentFile
   var coordinates
+  var before = $('#before')
 
 
 // #playStart押したら遷移する(#beforeを表示#topを非表示)
@@ -57,7 +58,6 @@ $("#playStart").click(function(){
       content = $('<a target="_blank">').append(img)
         .attr('download', currentFile.name)
         .attr('href', img.src || img.toDataURL())
-        $('#before').hide();
     }
     result.children().replaceWith(content)
     if (img.getContext) {
@@ -130,7 +130,7 @@ $("#playStart").click(function(){
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: result.width(600).height(600),
+      maxWidth: result.width(),
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,
@@ -141,7 +141,9 @@ $("#playStart").click(function(){
     }
     exifNode.hide()
     thumbNode.hide()
+    before.hide()
     displayImage(file, options)
+
   }
 
   // Hide URL/FileReader API requirement message in capable browsers:
