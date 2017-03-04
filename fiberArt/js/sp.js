@@ -10,11 +10,6 @@ $(function () {
 
 
 // #playStart押したら遷移する(#beforeを表示#topを非表示)
-//   $('#playStart').click(function() {
-//       $('#top').fadeOut('2500');
-//       $('#before').fadeIn('3000', 'easeOutQuad');
-// });
-
 $("#playStart").click(function(){
      $("#top").animate(
        {opacity: "toggle"},
@@ -29,7 +24,7 @@ $("#playStart").click(function(){
 
 // 次へを押したら画像を隠す
 
-// 画像が隠れたら作品が現れる
+
 
 
   // 色の受取用の配列
