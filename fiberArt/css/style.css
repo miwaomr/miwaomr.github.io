@@ -148,7 +148,6 @@ td {
   margin: 0 auto;
 }
 
-@media (min-width: 481px) {
   h2 {
     font-size: 40px;
   }
