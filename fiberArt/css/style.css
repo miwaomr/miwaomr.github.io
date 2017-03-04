@@ -164,7 +164,6 @@ td {
     font-size: 36px;
     text-align: center;
     color: #fff;
-    border-radius: 60px;
     background-color: #535353;
     overflow: hidden;
     -webkit-transition: .3s ease;
@@ -185,6 +184,7 @@ td {
     height: 100%;
     opacity: 0;
     cursor: pointer;
+    border-radius: 60px;
   }
 
   .navigation {
