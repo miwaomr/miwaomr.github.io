@@ -55,8 +55,8 @@ $("#playStart").click(function(){
     if (!(img.src || img instanceof HTMLCanvasElement)) {
       content = $('<span>Loading image file failed</span>')
     } else {
+      $('#before').hide()
       content = $('<a target="_blank">').append(img)
-        .hide('#before')
         .attr('download', currentFile.name)
         .attr('href', img.src || img.toDataURL())
     }
