@@ -64,7 +64,7 @@ $("#playStart").click(function(){
     if (img.getContext) {
       actionsNode.show()
       before.hide()
-      // getColor(img);
+      getColor(img);
     }
     if (data && data.exif) {
       displayExifData(data.exif)
