@@ -57,7 +57,7 @@ $("#playStart").click(function(){
     } else {
       content = $('<a target="_blank">').append(img)
         .attr('download', currentFile.name)
-        .attr('href', img.src || img.toDataURL())
+        .attr('href', img.src || img.toDataURL());
     }
     result.children().replaceWith(content)
     if (img.getContext) {
