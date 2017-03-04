@@ -21,7 +21,6 @@ $("#playStart").click(function(){
      );
    });
 
-
   // 色の受取用の配列
   var colorPallete = [];
 
@@ -57,7 +56,8 @@ $("#playStart").click(function(){
     } else {
       content = $('<a target="_blank">').append(img)
         .attr('download', currentFile.name)
-        .attr('href', img.src || img.toDataURL());
+        .attr('href', img.src || img.toDataURL())
+        $('#before').hide();
     }
     result.children().replaceWith(content)
     if (img.getContext) {
@@ -130,7 +130,7 @@ $("#playStart").click(function(){
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: result.width(),
+      maxWidth: result.width(600).height(600),
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,
