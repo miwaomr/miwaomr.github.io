@@ -130,14 +130,14 @@ tr:nth-child(odd) {
   background: #eee;
   color: #222;
 }
+
 td {
   padding: 10px;
 }
 
 /* 選択完了画面 */
 
-.result,
-.thumbnail {
+.result, .thumbnail {
   margin-top: 35%;
   padding: 20px;
   background: #fff;
@@ -148,6 +148,7 @@ td {
 .jcrop-holder {
   margin: 0 auto;
 }
+
 
 .navigation {
     list-style: none;
@@ -164,7 +165,7 @@ td {
 }
 
 
-#colorPallete ul{
+#colorPallete ul {
     list-style: none;
     overflow: hidden;
     margin: 0;
@@ -173,7 +174,7 @@ td {
     justify-content: space-around;
 }
 
-#colorPallete li{
+#colorPallete li {
     width: 100px;
     height: 100px;
     border-radius: 100px;
