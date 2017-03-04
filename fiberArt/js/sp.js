@@ -21,12 +21,6 @@ $("#playStart").click(function(){
      );
    });
 
-
-// 次へを押したら画像を隠す
-
-
-
-
   // 色の受取用の配列
   var colorPallete = [];
 
@@ -40,7 +34,7 @@ $("#playStart").click(function(){
     if (thumbnail) {
       thumbNode.empty()
       loadImage(thumbnail, function (img) {
-        thumbNode.append(img).show()
+        thumbNode.append(img).show().hide('#before')
       }, {orientation: exif.get('Orientation')})
     }
     for (prop in tags) {
@@ -163,8 +157,10 @@ $("#playStart").click(function(){
     })
     .on('drop', dropChangeHandler)
 
+
   $('#file-input')
     .on('change', dropChangeHandler)
+
 
   $('#edit')
     .on('click', function (event) {
