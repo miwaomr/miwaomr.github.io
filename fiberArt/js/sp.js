@@ -50,6 +50,7 @@ $("#playStart").click(function(){
     exifNode.show()
   }
 
+
   function updateResults (img, data) {
     var content
     if (!(img.src || img instanceof HTMLCanvasElement)) {
@@ -62,15 +63,12 @@ $("#playStart").click(function(){
     result.children().replaceWith(content)
     if (img.getContext) {
       actionsNode.show()
+      before.hide()
       getColor(img);
     }
     if (data && data.exif) {
       displayExifData(data.exif)
     }
-
-
-
-
 
   }
 
@@ -85,7 +83,6 @@ $("#playStart").click(function(){
         $('<span>' +
           'Your browser does not support the URL or FileReader API.' +
           '</span>')
-          before.hide()
       )
     }
   }
