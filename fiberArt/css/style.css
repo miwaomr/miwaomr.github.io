@@ -113,6 +113,7 @@ p {
   cursor: pointer;
 }
 
+
 table {
   width: 100%;
   word-wrap: break-word;
@@ -133,8 +134,11 @@ td {
   padding: 10px;
 }
 
+/* 選択完了画面 */
+
 .result,
 .thumbnail {
+  margin-top: 35%;
   padding: 20px;
   background: #fff;
   color: #222;

@@ -63,7 +63,7 @@ $("#playStart").click(function(){
     result.children().replaceWith(content)
     if (img.getContext) {
       actionsNode.show()
-      before.hide(3000)
+      before.hide()
       getColor(img);
     }
     if (data && data.exif) {
