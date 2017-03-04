@@ -85,9 +85,11 @@ $("#playStart").click(function(){
         $('<span>' +
           'Your browser does not support the URL or FileReader API.' +
           '</span>')
+          before.hide()
       )
     }
   }
+
 
   // canvasから色を取得
   function getColor(img){
@@ -105,6 +107,7 @@ $("#playStart").click(function(){
         createPallete(colorPallete)
   }
 
+
     // カラーパレットの生成
     function createPallete(aColors){
 
@@ -119,9 +122,6 @@ $("#playStart").click(function(){
 
         }
     }
-
-
-
 
 
   function dropChangeHandler (e) {
@@ -141,7 +141,6 @@ $("#playStart").click(function(){
     }
     exifNode.hide()
     thumbNode.hide()
-    before.hide()
     displayImage(file, options)
 
   }
