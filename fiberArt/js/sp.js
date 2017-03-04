@@ -7,7 +7,6 @@ $(function () {
   var actionsNode = $('#actions')
   var currentFile
   var coordinates
-  var before = $('#before')
 
 
 // #playStart押したら遷移する(#beforeを表示#topを非表示)
@@ -57,6 +56,7 @@ $("#playStart").click(function(){
       content = $('<span>Loading image file failed</span>')
     } else {
       content = $('<a target="_blank">').append(img)
+        .hide('#before')
         .attr('download', currentFile.name)
         .attr('href', img.src || img.toDataURL())
     }
@@ -83,7 +83,6 @@ $("#playStart").click(function(){
           'Your browser does not support the URL or FileReader API.' +
           '</span>')
       )
-      before.hide()
     }
   }
 
