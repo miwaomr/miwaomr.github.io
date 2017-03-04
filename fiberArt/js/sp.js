@@ -63,7 +63,6 @@ $("#playStart").click(function(){
     result.children().replaceWith(content)
     if (img.getContext) {
       actionsNode.show()
-      before.hide()
       getColor(img);
     }
     if (data && data.exif) {
@@ -84,6 +83,7 @@ $("#playStart").click(function(){
           'Your browser does not support the URL or FileReader API.' +
           '</span>')
       )
+      before.hide()
     }
   }
 
