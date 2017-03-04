@@ -129,7 +129,7 @@ $("#playStart").click(function(){
     var target = e.dataTransfer || e.target
     var file = target && target.files && target.files[0]
     var options = {
-      maxWidth: result.width(600).height(600),
+      maxWidth: result.width(600),
       canvas: true,
       pixelRatio: window.devicePixelRatio,
       downsamplingRatio: 0.5,
