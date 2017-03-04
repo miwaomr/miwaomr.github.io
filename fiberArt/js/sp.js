@@ -7,6 +7,7 @@ $(function () {
   var actionsNode = $('#actions')
   var currentFile
   var coordinates
+  var before = $('#before')
 
 
 // #playStart押したら遷移する(#beforeを表示#topを非表示)
@@ -55,7 +56,6 @@ $("#playStart").click(function(){
     if (!(img.src || img instanceof HTMLCanvasElement)) {
       content = $('<span>Loading image file failed</span>')
     } else {
-      $('#before').hide()
       content = $('<a target="_blank">').append(img)
         .attr('download', currentFile.name)
         .attr('href', img.src || img.toDataURL())
@@ -63,6 +63,7 @@ $("#playStart").click(function(){
     result.children().replaceWith(content)
     if (img.getContext) {
       actionsNode.show()
+      before.hide()
       getColor(img);
     }
     if (data && data.exif) {
