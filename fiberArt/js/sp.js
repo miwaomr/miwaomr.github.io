@@ -57,7 +57,6 @@ $("#playStart").click(function(){
       content = $('<a target="_blank">').append(img)
         .attr('download', currentFile.name)
         .attr('href', img.src || img.toDataURL())
-        $('#before').hide();
     }
     result.children().replaceWith(content)
     if (img.getContext) {
