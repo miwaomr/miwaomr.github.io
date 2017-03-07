@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="../css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
 
+
 </head>
 <body>
 
@@ -19,28 +20,34 @@
     <div class="logo">
         <img src="../img/logo.png" alt="logo">
     </div>
-    <div id="playStart">
+    <div id="buttonStart">
         <p>START</p>
     </div>
 </div>
 
 <!-- Top end -->
 
+<!-- Before start -->
+
 <section id="before">
-    <h2>写真をアップしよう</h2>
+    <h2></h2>
     <figure>
       <img src="../img/image.png" alt="photoImage">
     </figure>
     <p class="file_button">
-      写真を選ぶ
+      SELECT IMAGE
       <input type="file" id="file-input" class="file_input">
     </p>
 </section>
+
+<!-- Before end -->
 
 <!-- <p id="actions" style="display:none;">
 	<button type="button" id="edit">Edit</button>
 	<button type="button" id="crop">Crop</button>
 </p> -->
+
+
 <div id="result" class="result">
     <p>This demo works only in browsers with support for the <a href="https://developer.mozilla.org/en/DOM/window.URL">URL</a> or <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API.</p>
 </div>
@@ -48,11 +55,29 @@
 <div id="colorPallete">
     <ul></ul>
 </div>
-<div id="exif" class="exif" style="display:none;">
+<div id="next">
+  <a href="">
+      <p class="file_button">
+        NEXT
+      </p>
+  </a>
+</div>
+
+
+<!-- artwork -->
+<div id="artWork">
+
+
+
+</div>
+
+
+
+<!-- <div id="exif" class="exif" style="display:none;">
     <h2>Exif meta data</h2>
     <p id="thumbnail" class="thumbnail" style="display:none;"></p>
     <table></table>
-</div>
+</div> -->
 <script src="../js/lib/load-image.js"></script>
 <script src="../js/lib/load-image-meta.js"></script>
 <script src="../js/lib/load-image-exif.js"></script>
@@ -63,5 +88,7 @@
 <script src="../js/lib/jquery.Jcrop.js"></script>
 <script src="../js/lib/Vibrant.min.js"></script>
 <script src="../js/sp.js"></script>
+
+</script>
 </body>
 </html>

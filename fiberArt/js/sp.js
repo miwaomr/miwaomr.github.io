@@ -10,8 +10,8 @@ $(function () {
   var before = $('#before')
 
 
-// #playStart押したら遷移する(#beforeを表示#topを非表示)
-$("#playStart").click(function(){
+// #buttonStart押したら遷移する(#beforeを表示#topを非表示)
+$("#buttonStart").click(function(){
      $("#top").animate(
        {opacity: "toggle"},
        { duration: 1000, easing: 'swing', }
