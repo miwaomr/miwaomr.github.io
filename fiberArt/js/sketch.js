@@ -1,5 +1,5 @@
 
-var color = []; 
+var color = 
 
 function setup(){
 

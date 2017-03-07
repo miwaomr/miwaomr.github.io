@@ -30,7 +30,7 @@ body {
 
 .logo img {
   width: 50%;
-  margin-top: 150px;
+  margin-top: 75%;
 }
 
 @keyframes fadeIn{
@@ -101,7 +101,6 @@ h2 {
   opacity: 0;
   cursor: pointer;
 }
-
 
 table {
   width: 100%;
