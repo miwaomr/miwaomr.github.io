@@ -1,29 +1,9 @@
 
-var color = []; //配列を用意
-
-
-function setup() {
-  createCanvas(375, 667);
-
-}
-
-// function draw() {
-//   noStroke();
-//   fill('#255c7d');
-//   rect(0, 0, 75, height);
-//   fill('#9a7b69');
-//   rect(75, 0, 75, height);
-//   fill('#0d4164');
-//   rect(150, 0, 75, height);
-//   fill('#6b726b');
-//   rect(225, 0, 75, height);
-//   fill('#d4a493');
-//   rect(300, 0, 75, height);
-// }
+var color = []; 
 
 function setup(){
 
-  createCanvas(640,640);
+  createCanvas(375, 667);
   colorMode(HSB,360,100,100);
 
 }

@@ -12,14 +12,14 @@
 body {
   max-width: 750px;
   margin: 0 auto;
-  font-family: '游ゴシック','Yu Gothic', 'Amaranth', sans-serif;
+  font-family: '游ゴシック','Yu Gothic', 'Cabin', sans-serif;
   background: #fff;
   color: #000;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
-/* トップ */
+/* Top */
 #top {
   width: 100%;
   height: 1334px;
@@ -31,7 +31,6 @@ body {
 .logo img {
   width: 50%;
   margin-top: 150px;
-
 }
 
 @keyframes fadeIn{
@@ -49,7 +48,6 @@ body {
 }
 
 #buttonStart p {
-  position: relative;
   display: inline-block;
   text-decoration: none;
   color: #999;
@@ -58,8 +56,7 @@ body {
 }
 
 
-/* 写真選択画面 */
-
+/* Before */
 #before {
   text-align: center;
   display: none;
@@ -127,7 +124,6 @@ td {
 }
 
 /* 選択完了画面 */
-
 .result,
 .thumbnail {
   margin-top: 35%;

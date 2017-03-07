@@ -8,7 +8,7 @@
 <title>Fiber Art</title>
 <!-- <link rel="stylesheet" href="../css/vendor/jquery.Jcrop.css"> -->
 <link rel="stylesheet" href="../css/style.css">
-<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+ href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 </head>
 
 <body>
@@ -28,8 +28,7 @@
 
 <!-- Before start -->
 
-<section id="before">
-    <h2></h2>
+<div id="before">
     <figure>
       <img src="../img/image.png" alt="photoImage">
     </figure>
@@ -37,7 +36,7 @@
       SELECT IMAGE
       <input type="file" id="file-input" class="file_input">
     </p>
-</section>
+</div>
 
 <!-- Before end -->
 
@@ -46,30 +45,36 @@
 	<button type="button" id="crop">Crop</button>
 </p> -->
 
+<!-- Result start -->
+<div>
+    <div id="result" class="result">
+        <p>This demo works only in browsers with support for the <a href="https://developer.mozilla.org/en/DOM/window.URL">URL</a> or <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API.</p>
+    </div>
 
-<div id="result" class="result">
-    <p>This demo works only in browsers with support for the <a href="https://developer.mozilla.org/en/DOM/window.URL">URL</a> or <a href="https://developer.mozilla.org/en/DOM/FileReader">FileReader</a> API.</p>
+    <div id="colorPallete">
+        <ul></ul>
+    </div>
+
+    <div id="next">
+      <a href="">
+          <p class="file_button">
+            NEXT
+          </p>
+      </a>
+    </div>
 </div>
-
-<div id="colorPallete">
-    <ul></ul>
-</div>
-<div id="next">
-  <a href="">
-      <p class="file_button">
-        NEXT
-      </p>
-  </a>
-</div>
+<!-- Result end -->
 
 
-<!-- artwork -->
+<!-- artWork start -->
+
 <div id="artWork">
 
 
 
 </div>
 
+<!-- artWork end -->
 
 
 <!-- <div id="exif" class="exif" style="display:none;">
