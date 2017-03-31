@@ -19,6 +19,7 @@
 //     line(i, 0, i, height);
 //   }
 // }
+
 var balls = [];
 
 function setup() {
