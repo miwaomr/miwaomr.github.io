@@ -4,7 +4,7 @@ $(function () {
   var result = $('#result')
   var exifNode = $('#exif')
   var thumbNode = $('#thumbnail')
-  var actionsNode = $('#actions')
+  var actionsNoe = $('#actions')
   var currentFile
   var coordinates
   var before = $('#before')

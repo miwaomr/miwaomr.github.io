@@ -1,20 +1,32 @@
+@charset "UTF-8";
 
+/* common */
 body {
-  margin: 0 auto;
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
-  background: #fff;
-  color: #000;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+    background: #fff;
+    color: #000;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
-.inner{
+#wrapper {
     width: 1140px;
     margin: 0 auto;
 }
 
+#wrapper h1 {
+    margin: 0 auto;
+    width: 260px;
+}
+
+
 /* top */
 
-.howToButton {
 
-}
+
+
+
+
+
+
+/* how to play */
